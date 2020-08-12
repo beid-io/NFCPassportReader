@@ -17,7 +17,7 @@ class DataGroupParser {
                                       NotImplementedDG.self, NotImplementedDG.self, NotImplementedDG.self,
                                       NotImplementedDG.self, DataGroup7.self, NotImplementedDG.self,
                                       NotImplementedDG.self, NotImplementedDG.self, DataGroup11.self,
-                                      DataGroup12.self, NotImplementedDG.self, DataGroup14.self,
+                                      DataGroup12.self, DataGroup13.self, DataGroup14.self,
                                       DataGroup15.self, NotImplementedDG.self, SOD.self]
     
     
@@ -576,6 +576,15 @@ public class DataGroup12 : DataGroup {
             }
         } while pos < data.count
     }
+}
+
+class DataGroup13 : DataGroup {
+
+    required init( _ data : [UInt8] ) throws {
+        try super.init(data)
+        datagroupType = .DG13
+    }
+    
 }
 
 @available(iOS 13, *)
