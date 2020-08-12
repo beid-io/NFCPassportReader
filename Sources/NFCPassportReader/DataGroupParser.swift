@@ -578,7 +578,8 @@ public class DataGroup12 : DataGroup {
     }
 }
 
-class DataGroup13 : DataGroup {
+@available(iOS 13, *)
+public class DataGroup13 : DataGroup {
 
     required init( _ data : [UInt8] ) throws {
         try super.init(data)
